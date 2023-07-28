@@ -5,13 +5,13 @@ const element = (
     <>
         <h1>Nasza strona!</h1>
         <main>
-            <Link />
+            <Link text="Sprawdź stronę kursu!" shouldOpenNewTab={true} />
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
                 labore blanditiis magnam eveniet rem ratione, voluptatum nulla
                 inventore quaerat necessitatibus.
             </p>
-            <Link />
+            <Link shouldOpenNewTab={false} />
         </main>
     </>
 );
