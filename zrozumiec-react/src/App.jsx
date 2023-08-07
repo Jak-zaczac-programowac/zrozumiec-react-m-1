@@ -1,4 +1,5 @@
 import { PersonInfo } from "./components/PersonInfo";
+import dogImg from "./assets/dog.jpg";
 
 function App() {
     const jan = {
@@ -18,6 +19,9 @@ function App() {
         lastName: "Kowalski",
         mail: "k.kow@gmail.com",
     };
+
+    const imageLink = "https://zrozumiecreact.pl/dog.jpg";
+
     return (
         <>
             <PersonInfo person={jan} />
@@ -25,6 +29,7 @@ function App() {
             <PersonInfo person={janina} />
             <br />
             <PersonInfo person={karol} />
+            <img src={imageLink} alt="" />
         </>
     );
 }
