@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="link"></div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
+            similique voluptate. Aliquam, quos voluptatum minima recusandae
+            natus nemo molestias laboriosam explicabo necessitatibus,
+            praesentium ea ratione beatae adipisci. Illum, iste fuga!
+        </p>
+        <div class="link"></div>
+        <p>
+            Aliquam, iure dolore reiciendis sint excepturi esse praesentium
+            consequatur tempore, non at consectetur perferendis sequi modi, in
+            dignissimos. Debitis deleniti distinctio officia suscipit omnis
+            consectetur commodi cumque nam. Itaque, ratione!
+        </p>
+        <div class="link"></div>
+        <p>
+            Nesciunt incidunt aliquid, facilis delectus excepturi, asperiores
+            tenetur possimus consectetur doloremque laudantium necessitatibus
+            eos accusamus in neque quisquam distinctio assumenda cupiditate
+            minima ad officiis ducimus, eveniet inventore! Est, sequi debitis.
+        </p>
+        <div class="link"></div>
+        <p>
+            At doloribus, fugit tempore, maiores consectetur porro iusto
+            expedita quidem corrupti minima facere laudantium dicta possimus
+            quia et, ratione beatae illum consequuntur corporis saepe provident!
+            Ad cupiditate labore repudiandae autem?
+        </p>
+        <div class="link"></div>
+        <p>
+            Placeat quae perspiciatis quis molestias inventore id iure, quia
+            nobis fuga, laudantium itaque rem similique molestiae qui quo
+            consequatur, nulla natus illum atque officia ex odio pariatur vero
+            error? Ex!
+        </p>
+        <script
+            crossorigin
+            src="https://unpkg.com/react@18/umd/react.development.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+        ></script>
+        <script>
+            document.querySelectorAll(".link").forEach((link) => {
+                const anchorElement = React.createElement(
+                    "a",
+                    {
+                        href: "https://zrozumiecreact.pl",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                    },
+                    "Sprawdź stronę kursu"
+                );
+                console.log(anchorElement);
+                ReactDOM.createRoot(link).render(anchorElement);
+            });
+        </script>
+    </body>
+</html>
